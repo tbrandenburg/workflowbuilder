@@ -3,7 +3,7 @@ import type { NodeSchema } from '@workflowbuilder/sdk';
 
 // Kept as a plain string (not an enum) so a provider added later, or a custom
 // OpenAI-compatible endpoint, doesn't require a schema migration to unlock.
-export const providerOptions = [
+const providerOptions = [
   { label: 'Auto', value: 'auto' },
   { label: 'OpenRouter', value: 'openrouter' },
   { label: 'OpenAI', value: 'openai' },
